@@ -1,0 +1,20 @@
+# Move analysis (if or not legal)-----
+        '''
+        Rook:
+        si la columna o la fila final es igual a la inicial, quiere decir que es movimiento legal
+
+        Bishop:
+        si la diferencia absoluta entre posición final y posición inicial es igual en columnas y filas (abs(final-ini) row = col abs(final-ini))
+
+        Knight:
+        Que la difernecia absoluta vertical u horizontal del movimiento sea de 2, y se haga el movimiento de un cuadro respectivamente (movimietno en "L" en cualquier caso)
+
+        Queen:
+        Rook + Bishop
+
+        King:
+        solo una casilla de diferencia, no importa el movimiento, mientras que ni una diferencia (rows fin-ini, o col fin-ini) sea mayor a 2
+
+        Pawn:
+        la diferencia en rows debe ser de 1, y la columna debe mantenerse igual
+        '''
